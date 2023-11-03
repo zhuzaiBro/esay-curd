@@ -1,7 +1,6 @@
-package service
+package core
 
 import (
-	baseDao "easy-curd/dao"
 	"strconv"
 )
 
@@ -24,7 +23,7 @@ type Service[T interface{}] interface {
 }
 
 type ServiceIMPL[T interface{}] struct {
-	BaseDao baseDao.Dao[T]
+	BaseDao Dao[T]
 }
 
 func (s ServiceIMPL[T]) Save(data *T, id uint64) error {
