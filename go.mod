@@ -1,4 +1,5 @@
-module easy
+module github.com/zhuzaiBro/esay-curd
+
 
 go 1.20
 
